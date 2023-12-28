@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Level</title>
+
+    <style>
+        body{
+            font-family: 'Rocher';
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            overflow: hidden;
+            height: 100vh;
+            background: linear-gradient(
+            0deg,
+            rgb(94, 232, 26) 0%,
+            rgb(42, 187, 228) 100%
+            );
+        }
+
+        @font-face {
+            font-family: 'Rocher';
+            src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+        }
+
+        @font-palette-values --Red {
+            font-family: Rocher;
+            base-palette: 3;
+        }
+
+        h1{
+            width: 100%;
+            display: block;
+        }
+
+        .red {
+            font-palette: --Red;
+            font-size: 30px;
+            position: fixed;
+            top: 3%;
+            text-align: center;
+        }
+
+        div.main{
+            box-shadow: 10px 10px 20px black;
+            width: 70%;
+            height: 80%;
+            position: absolute;
+            top: 15%;
+        }
+
+        img{
+            width: 250px;
+            height: 200px;
+        }
+
+        button{
+            background-color: #3bdc43;
+            border: 2px solid #000000;
+            border-radius: 30px;
+            box-shadow: #000000 4px 4px 0 0;
+            color: #000000;
+            cursor: pointer;
+            font-weight: 300;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        button:hover {
+            background-color: #66d7d6;
+            font-weight: 300;
+            font-size: 20px;
+        }
+
+        button:active {
+            box-shadow: #000000 2px 2px 0 0;
+            transform: translate(2px, 2px);
+        }
+
+        @media (min-width: 768px) {
+            button {
+                min-width: 120px;
+                padding: 0 25px;
+            }
+        }
+
+        #level1{
+            display: flex;
+            position:absolute;
+            top: 10%;  
+            left: 15%; 
+        }
+        #level2{
+            display: flex;
+            position:absolute;
+            top: 10%;  
+            left: 60%; 
+        }
+        #level3{
+            display: flex;
+            position:absolute;
+            top: 50%;  
+            left: 15%; 
+        }
+        #level4{
+            display: flex;
+            position:absolute;
+            top: 50%;  
+            left: 60%; 
+        }
+
+        #btnLevel1{
+            margin-top: 5px;
+            text-decoration: none;
+            display: flex;
+            position:absolute;
+            top: 100%;  
+            left: 25%; 
+        }
+
+        #btnLevel2{
+            margin-top: 5px;
+            text-decoration: none;
+            display: flex;
+            position:absolute;
+            top: 100%;  
+            left: 25%; 
+        }
+
+        #btnLevel3{
+            margin-top: 5px;
+            text-decoration: none;
+            display: flex;
+            position:absolute;
+            top: 100%;  
+            left: 25%; 
+        }
+
+        #btnLevel4{
+            margin-top: 5px;
+            text-decoration: none;
+            display: flex;
+            position:absolute;
+            top: 100%;  
+            left: 25%; 
+        }
+    </style>
+</head>
+<body>
+    <h1 class="red">Choose which level you want to play!</h1>
+
+    <div class="main">
+
+        <div id="level1">
+            <img src="images/level1.png" alt="level1">
+            <a id="btnLevel1" href="index.html"><button>Level 1</button></a>
+        </div>
+
+        <div id="level2">
+            <img src="images/level2.png" alt="level2">
+            <a id="btnLevel2" href="level2.html"><button>Level 2</button></a>
+        </div>
+
+       <div id="level3">
+            <img src="images/level3.png" alt="level3">
+            <a id="btnLevel3" href="level3.html"><button>Level 3</button></a>
+        </div>
+
+        <div id="level4">
+            <img src="images/level4.png" alt="level4">
+            <a id="btnLevel4" href="level4.html"><button>Level 4</button></a>
+        </div>
+    </div>
+</body>
+</html>
